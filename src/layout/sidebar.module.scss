@@ -1,0 +1,165 @@
+
+/* SIDEBAR SECTION: Left navigation menu styles */
+.sidebarSection {
+  width: 240px;
+  background: #f8f9fa;
+  border-right: 1px solid #e9ecef;
+  padding: 24px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.sidebarSection .mainNav {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 0 16px;
+}
+
+.sidebarSection .mainNav .navItem {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 12px;
+  padding: 10px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #6b7280;
+  font-size: 14px;
+  transition: all 0.2s;
+  position: relative;
+}
+
+.sidebarSection .mainNav .navItem:hover {
+  background: rgba(201, 250, 223, 0.89);
+  color: #059669;
+}
+
+.sidebarSection .mainNav .navItem.active {
+  background: rgba(201, 250, 223, 0.89);
+  color: #059669;
+  font-weight: 500;
+}
+
+.sidebarSection .mainNav .navItem i {
+  width: 16px;
+  text-align: center;
+}
+
+.sidebarSection .mainNav .navItem .navArrow {
+  margin-left: auto;
+  font-size: 12px;
+}
+
+.sidebarSection .databaseSection {
+  padding: 0 16px;
+}
+
+.sidebarSection .databaseSection .sectionTitle {
+  font-size: 12px;
+  font-weight: 600;
+  color: #9ca3af;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 12px;
+}
+
+.sidebarSection .otherSections {
+  padding: 0 16px;
+}
+
+.sidebarSection .teamSection {
+  margin-top: auto;
+  padding: 16px;
+  border-top: 1px solid #e9ecef;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sidebarSection .teamSection .teamInfo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.sidebarSection .teamSection .teamInfo .teamAvatar {
+  width: 24px;
+  height: 24px;
+  background: #1f2937;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.sidebarSection .teamSection .teamInfo .teamName {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.sidebarSection .teamSection .teamControls {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.sidebarSection .teamSection .teamControls i {
+  font-size: 10px;
+  color: #9ca3af;
+}
+
+
+/* RESPONSIVE DESIGN SECTION: Mobile and tablet adjustments */
+@media (max-width: 768px) {
+  .navbarSection .navbarLeft {
+    gap: 12px;
+  }
+
+  .navbarSection .navbarLeft .searchContainer {
+    min-width: 200px;
+  }
+
+  .sidebarSection {
+    width: 200px;
+  }
+
+  .contentSection .notesGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .contentSection .pageHeader {
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+  }
+
+  .contentSection .pageHeader .headerActions {
+    width: 100%;
+    justify-content: flex-end; 
+  }
+}
+
+@media (max-width: 480px) {
+  .navbarSection {
+    padding: 0 16px;
+  }
+
+  .navbarSection .navbarLeft .searchContainer {
+    display: none;
+  }
+
+  .contentSection {
+    padding: 16px;
+  }
+
+  .sidebarSection {
+    width: 180px;
+  }
+}
+

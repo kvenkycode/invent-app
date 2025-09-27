@@ -1,0 +1,190 @@
+/* NAVBAR SECTION: Top navigation bar styles */
+.navbarSection {
+  background: #fff;
+  border-bottom: 1px solid #e9ecef;
+  padding: 0 24px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbarSection .navbarLeft {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.navbarSection .navbarLeft .logoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.navbarSection .navbarLeft .logoContainer .logoIcon {
+  width: 32px;
+  height: 32px;
+  background: #059669;
+  color: white;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.navbarSection .navbarLeft .logoContainer .logoText {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.navbarSection .navbarLeft .sidebarToggle {
+  display: flex;
+  gap: 2px;
+  color: #6b7280;
+  cursor: pointer;
+}
+
+.navbarSection .navbarLeft .searchContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f3f4f6;
+  border-radius: 8px;
+  padding: 8px 12px;
+  min-width: 300px;
+}
+
+.navbarSection .navbarLeft .searchContainer .searchIcon {
+  color: #9ca3af;
+  margin-right: 8px;
+}
+
+.navbarSection .navbarLeft .searchContainer .searchInput {
+  border: none;
+  background: transparent;
+  outline: none;
+  flex: 1;
+  font-size: 14px;
+}
+
+.navbarSection .navbarLeft .searchContainer .searchInput::placeholder {
+  color: #9ca3af;
+}
+
+.navbarSection .navbarLeft .searchContainer .searchShortcuts {
+  display: flex;
+  gap: 4px;
+  margin-left: 8px;
+}
+
+.navbarSection .navbarLeft .searchContainer .searchShortcuts .shortcutKey {
+  background: #f3f4f6;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  padding: 2px 8px;
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.navbarSection .navbarRight {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.navbarSection .navbarRight .helpCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  color: #6b7280;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.navbarSection .navbarRight .userProfile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+}
+
+.navbarSection .navbarRight .userProfile:hover {
+  background: #f3f4f6;
+}
+
+.navbarSection .navbarRight .userProfile .profileImg {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.navbarSection .navbarRight .userProfile .userName {
+  font-size: 14px;
+  font-weight: 500;
+  color: #1f2937;
+}
+
+
+/* RESPONSIVE DESIGN SECTION: Mobile and tablet adjustments */
+@media (max-width: 768px) {
+  .navbarSection .navbarLeft {
+    gap: 12px;
+  }
+
+  .navbarSection .navbarLeft .searchContainer {
+    min-width: 200px;
+  }
+
+  .sidebarSection {
+    width: 200px;
+  }
+
+  .contentSection .notesGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .contentSection .pageHeader {
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+  }
+
+  .contentSection .pageHeader .headerActions {
+    width: 100%;
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbarSection {
+    padding: 0 16px;
+  }
+
+  .navbarSection .navbarLeft .searchContainer {
+    display: none;
+  }
+
+  .contentSection {
+    padding: 16px;
+  }
+
+  .sidebarSection {
+    width: 180px;
+  }
+}
+

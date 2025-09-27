@@ -1,0 +1,299 @@
+
+/* CONTENT SECTION: Main notes area styles */
+.contentSection {
+  flex: 1;
+  padding: 24px;
+  background: #fff;
+  overflow-y: auto;
+}
+
+/* PAGE HEADER SECTION: Title and action buttons */
+.contentSection .pageHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.contentSection .pageHeader .pageTitle {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0;  
+}
+
+.contentSection .pageHeader .headerActions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+}
+
+.contentSection .pageHeader .headerActions > div{
+padding: 7px 18px;border-radius: 8px;
+  background-color: rgba(201, 250, 223, 0.89);
+}
+
+.contentSection .pageHeader .headerActions .actionBtn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: none;
+  outline: none;
+  background: #f3f4f6;
+  border: 1px solid #d1d5db;
+  color: #374151;
+}
+
+.contentSection .pageHeader .headerActions .actionBtn:hover {
+  background: #f3f4f6;
+  border-color: #9ca3af;
+}
+
+.contentSection .pageHeader .headerActions .primaryBtn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: none;
+  outline: none;
+  background: #1f2937;
+  color: white;
+  font-weight: 500;
+}
+
+.contentSection .pageHeader .headerActions .primaryBtn:hover {
+  background: #374151;
+}
+
+/* CARDS GRID SECTION: Notes cards layout */
+.contentSection .notesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+/* NOTE CARD SECTION: Individual card styles */
+.contentSection .noteCard {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+}
+
+.contentSection .noteCard:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.contentSection .noteCard .cardTags {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+
+.contentSection .noteCard .cardTags .tag {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  border: 1px solid;
+}
+
+.contentSection .noteCard .cardTags .tag.tagWeekly {
+  background: #fef3c7;
+  color: #d97706;
+  border-color: #fbbf24;
+}
+
+.contentSection .noteCard .cardTags .tag.tagMonthly {
+  background: #d1fae5;
+  color: #059669;
+  border-color: #34d399;
+}
+
+.contentSection .noteCard .cardTags .tag.tagProduct {
+  background: #dbeafe;
+  color: #2563eb;
+  border-color: #60a5fa;
+}
+
+.contentSection .noteCard .cardTags .tag.tagBusiness {
+  background: #e9d5ff;
+  color: #7c3aed;
+  border-color: #a78bfa;
+}
+
+.contentSection .noteCard .cardTags .tag.tagPersonal {
+  background: #fed7aa;
+  color: #ea580c;
+  border-color: #fb923c;
+}
+
+.contentSection .noteCard .cardTags .tag.tagBadge {
+  background: #fef3c7;
+  color: #d97706;
+  border-color: #fbbf24;
+}
+
+.contentSection .noteCard .cardTitle {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+.contentSection .noteCard .cardContent {
+  flex: 1;
+  margin-bottom: 16px;
+}
+
+.contentSection .noteCard .cardContent p {
+  color: #6b7280;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.contentSection .noteCard .cardContent ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contentSection .noteCard .cardContent ul li {
+  color: #6b7280;
+  font-size: 14px;
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.contentSection .noteCard .cardContent ul li i {
+  color: #10b981;
+  font-size: 12px;
+}
+
+.contentSection .noteCard .cardContent .cardImage {
+  margin-top: 12px;
+}
+
+.contentSection .noteCard .cardContent .cardImage img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.contentSection .noteCard .cardContent .cardThumbnails {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.contentSection .noteCard .cardContent .cardThumbnails img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.contentSection .noteCard .cardFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 16px;
+  border-top: 1px solid #f3f4f6;
+}
+
+.contentSection .noteCard .cardFooter .authorInfo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.contentSection .noteCard .cardFooter .authorInfo .authorAvatar {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+
+.contentSection .noteCard .cardFooter .authorInfo .authorName {
+  font-size: 14px;
+  font-weight: 500;
+  color: #374151;
+}
+
+.contentSection .noteCard .cardFooter .timestamp {
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+
+/* RESPONSIVE DESIGN SECTION: Mobile and tablet adjustments */
+@media (max-width: 768px) {
+  .navbarSection .navbarLeft {
+    gap: 12px;
+  }
+
+  .navbarSection .navbarLeft .searchContainer {
+    min-width: 200px;
+  }
+
+  .sidebarSection {
+    width: 200px;
+  }
+
+  .contentSection .notesGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .contentSection .pageHeader {
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+  }
+
+  .contentSection .pageHeader .headerActions {
+    width: 100%;
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbarSection {
+    padding: 0 16px;
+  }
+
+  .navbarSection .navbarLeft .searchContainer {
+    display: none;
+  }
+
+  .contentSection {
+    padding: 16px;
+  }
+
+  .sidebarSection {
+    width: 180px;
+  }
+}
+
+
